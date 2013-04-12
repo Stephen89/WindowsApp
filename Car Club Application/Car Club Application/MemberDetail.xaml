@@ -1,0 +1,72 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Car_Club_Application.UpdateMethod"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid Margin="0,0,0,-11" Grid.RowSpan="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="monkey.jpg" x:Name="Jellyfish" />
+            </Grid.Background>
+        </Grid>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Car Club App" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="My Details" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer Height="607" HorizontalAlignment="Left" Margin="-12,-6,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="468" >
+        <Grid>
+                
+                    <TextBlock Height="40" Name="textBlock1" Text="County :" Width="425" Margin="20,300,23,356" />
+                    <TextBlock Height="40" HorizontalAlignment ="Left" Margin="20,174,0,482" Name="textBlock6" Text="Telephone :" Width="420" />
+                    <TextBlock Height="40" HorizontalAlignment ="Left" Margin ="18,210,0,446"  Name="Address1" Text="Address Line 1 : " Width="430" />
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="20,60,0,0" Name="FirstName" Text="First Name :" VerticalAlignment="Top" Width="456" />
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="20,90,0,0" Name="Surname" Text="Surname :" VerticalAlignment="Top" Width="450" />
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="20,120,0,0" Name="Decoration" Text="Decorations :" VerticalAlignment="Top" Width="450" />
+                    <TextBlock Height="40" HorizontalAlignment ="Left" Margin="20,150,0,0" Name="Number" Text="Mobile Number :" VerticalAlignment="Top" Width="420" />
+                    <TextBlock Height="40" HorizontalAlignment="Left" Name="Address2" Text="Address Line 2 : " Margin="20,240,0,410" />
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="20,330,0,0" Name="City" Text="City :" VerticalAlignment="Top" Width="447" />
+                    <TextBlock HorizontalAlignment="Left" Margin="20,360,0,289" Name="textBlock4" Text="Poste Code : " Width="420" />
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="20,439,0,0" Name="textBlock5" Text="Renewal Date : " VerticalAlignment="Top" Width="443" />
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="20,30,0,0" Name="textBlock3" Text="Title : " VerticalAlignment="Top" Width="443" />
+                    <TextBlock Height="40" HorizontalAlignment="Left" Margin="18,276,0,0" Name="textBlock7" Text="Address Line 3 : " VerticalAlignment="Top" Width="180" />
+                    <TextBlock Height="40" Name="textBlock2" Text="ID : " Margin="20,394,-59,262" />
+                </Grid>
+        </ScrollViewer>
+            
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

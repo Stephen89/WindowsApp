@@ -1,0 +1,64 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Car_Club_Application.Update_CarOwner"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Car Club App" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Car Owner" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer Height="598" HorizontalAlignment="Left" Margin="-12,9,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="480">
+                <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <TextBlock Height="37" HorizontalAlignment="Left" Margin="12,32,0,0" Name="textBlock1" Text="Registration Number : " VerticalAlignment="Top" Width="209" />
+                    <TextBox Height="76" HorizontalAlignment="Left" Margin="212,10,0,0" Name="textBox1" Text="" VerticalAlignment="Top" Width="238" />
+                    <Button Click="button1_Click" Content="Find Car" Height="73" HorizontalAlignment="Left" Margin="235,80,0,0" Name="button1" VerticalAlignment="Top" Width="199" />
+                    <TextBlock Height="32" HorizontalAlignment="Left" Margin="13,228,0,0" Name="BodyStyle" Text="Body Style :" VerticalAlignment="Top" Width="189" />
+                    <TextBlock Height="32" HorizontalAlignment="Left" Margin="12,279,0,0" Name="Colour" Text="Colour :" VerticalAlignment="Top" Width="189" />
+                    <TextBlock Height="32" HorizontalAlignment="Left" Margin="13,336,0,0" Name="Condition" Text="Condition :" VerticalAlignment="Top" Width="189" />
+                    <TextBlock Height="32" HorizontalAlignment="Left" Margin="12,394,0,0" Name="Model" Text="Model :" VerticalAlignment="Top" Width="189" />
+                    <TextBlock Height="32" HorizontalAlignment="Left" Margin="13,452,0,0" Name="Year" Text="Year :" VerticalAlignment="Top" Width="189" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="178,201,0,0" Name="textBoxBodystyle" Text="" VerticalAlignment="Top" Width="256" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="179,260,0,0" Name="textBoxClolour" Text="" VerticalAlignment="Top" Width="256" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="179,317,0,0" Name="textBoxCondition" Text="" VerticalAlignment="Top" Width="256" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="179,374,0,0" Name="textBoxModel" Text="" VerticalAlignment="Top" Width="256" />
+                    <TextBox Height="72" HorizontalAlignment="Left" Margin="179,432,0,0" Name="textBoxYear" Text="" VerticalAlignment="Top" Width="256" />
+                    <Button Content="Update" Height="72" HorizontalAlignment="Left" Margin="178,503,0,0" Name="button2" VerticalAlignment="Top" Width="190" Click="button2_Click" />
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>
